@@ -46,7 +46,7 @@ mouseLabel.place(x=0,y=105)
 
 mouseEntry = ttk.Entry(width=9)
 mouseEntry.place(x=74,y=105)
-mouseEntry.insert(0,'0.000001')
+mouseEntry.insert(0,'0.0000008')
 
 startButton = ttk.Button(text='开始',command=start)
 startButton.place(x=0,y=130)
