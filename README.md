@@ -1,5 +1,5 @@
 这是一个adofai自动打谱程序
-使用pyadofai旧版本v1.1
+
 说明：
 程序有两个版本，main.py和UI.py，两个都可以用，main.py没有UI,UI.py加了UI,但是我感觉加了UI程序有点不稳，推荐使用main.py
 如果使用main.py，同目录下必须有settings.txt，里面有一个字典，三个项:
