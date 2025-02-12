@@ -59,7 +59,7 @@ def _thread1():
     f = ad.adofai(file)
     bpm = f.settings['bpm']
     times = []
-    ra = f.absBeats(bpm)
+    ra = f.getAbsBeatList(bpm)
     ra.pop(0)
     for i in ra:
         times.append(i*60/bpm)
