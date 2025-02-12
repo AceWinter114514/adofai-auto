@@ -1,4 +1,4 @@
-import __init__ as ad
+import pyadofai as ad
 import os
 import json
 import pydirectinput as pd
