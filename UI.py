@@ -1,4 +1,4 @@
-import __init__ as ad
+import pyadofai as ad
 import pydirectinput as pd
 import time
 import keyboard as kb
