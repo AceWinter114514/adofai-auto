@@ -1,4 +1,4 @@
-import adofai as ad
+import __init__ as ad
 import os
 import json
 import pydirectinput as pd
@@ -28,11 +28,14 @@ file = askopenfilename(filetypes=[('adofai文件','adofai'),])
 tk.destroy()
 f = ad.adofai(file)
 bpm = f.settings['bpm']
+bpm = 2025/2
 times = []
-ra = f.absBeats(bpm)
+ra = f.getAbsBeatList(bpm)
 ra.pop(0)
+
 for i in ra:
     times.append(i*60/bpm)
+print(f'在游戏的第一次按键时按下{key}开始程序，可以将鼠标移动到屏幕左上角结束程序')
 kb.wait(key)
 for i in times:
     s1 = pd.position()[0]-pd.size()[0]/2
