@@ -21,14 +21,13 @@ with open('settings.txt','r') as f:
 muliter = dic['muliter']
 mouse = dic['mouse']
 key = dic['key']
-print('导入文件')
+print('请导入文件')
 os.system('pause')
 tk = tk.Tk()
 file = askopenfilename(filetypes=[('adofai文件','adofai'),])
 tk.destroy()
 f = ad.adofai(file)
-bpm = f.settings['bpm']
-bpm = 2025/2
+bpm = f.settings['bpm']/2
 times = []
 ra = f.getAbsBeatList(bpm)
 ra.pop(0)
