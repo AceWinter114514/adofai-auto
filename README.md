@@ -46,7 +46,7 @@
 
 ## createSettings.py使用方法:  
 createSettings.py是一个创建文件以方便main.py读取的程序  
-运行后会在当前目录下创建一个settings.txt文件，里面有一个字典，三个项:  
+运行后会在当前目录下创建一个文件，文件名可指定，里面有一个字典，三个项:  
 `{"key":string,"muliter":float,"mouse":float}`  
 用处在上文的main.py使用方法中有说明  
 目前，它创建出的文件的文件名如果不是上文要求的Settings.txt，则main.py不会读取，并且还无法写入adofai文件的文件路径以规避手动导入  
